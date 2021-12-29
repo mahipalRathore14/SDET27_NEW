@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="regressionSuite"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="practise.TestNGCreateContactWthOrg">
+        <methods>
+          <include name="closingDataBase"/>
+          <include name="connectToDataBase"/>
+          <include name="logoutOfAppl"/>
+          <include name="closingBrowser"/>
+          <include name="loginToAppl"/>
+          <include name="createContactWithOrgTest"/>
+          <include name="launchingBrowser"/>
+        </methods>
+      </class> <!-- practise.TestNGCreateContactWthOrg -->
+      <class name="practise.TestNGCreateOrgWithInd">
+        <methods>
+          <include name="closingDataBase"/>
+          <include name="connectToDataBase"/>
+          <include name="logoutOfAppl"/>
+          <include name="closingBrowser"/>
+          <include name="creatOrgWithIndustry"/>
+          <include name="loginToAppl"/>
+          <include name="launchingBrowser"/>
+        </methods>
+      </class> <!-- practise.TestNGCreateOrgWithInd -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
